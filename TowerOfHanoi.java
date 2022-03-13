@@ -1,4 +1,5 @@
 
+
 public class TowerOfHanoi {
 
 
@@ -149,10 +150,3 @@ public class TowerOfHanoi {
 		hanoi(2,1,2,3);
 	}
 }
-
-
-
-
-
-
-
