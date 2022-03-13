@@ -1,18 +1,15 @@
-
-
 public class TowerOfHanoi {
 
-
+	
 	public static void hanoi(int number , int start , int mid , int end) {
 		int number_of_moves = (int) (Math.pow(2, number) - 1);
+		int counter_for_start_to_end = 0;
+		int counter_for_start_to_end_exception = 0;
+		int counter_for_start_to_mid_exception1 = 0;
+		int counter_for_start_to_mid_exception2 = 0;
+		int counter_for_mid_to_end_exception1 = 0;
+		int counter_for_mid_to_end_exception2 = 0;
 		if (number % 2 == 1){
-			int counter_for_start_to_end = 0;
-			int counter_for_start_to_end_exception = 0;
-			int counter_for_start_to_mid_exception1 = 0;
-			int counter_for_start_to_mid_exception2 = 0;
-			int counter_for_mid_to_end_exception1 = 0;
-			int counter_for_mid_to_end_exception2 = 0;
-
 			for (int move = 1 ; move < number_of_moves + 1; move++) {
 				if (move % 3 == 1) {
 					if (move == 40 + (44 * counter_for_start_to_end_exception)) {
@@ -77,14 +74,7 @@ public class TowerOfHanoi {
 			int temp;
 			temp = mid;
 			mid = end;
-			end = temp; 
-			int counter_for_start_to_end = 0;
-			int counter_for_start_to_end_exception = 0;
-			int counter_for_start_to_mid_exception1 = 0;
-			int counter_for_start_to_mid_exception2 = 0;
-			int counter_for_mid_to_end_exception1 = 0;
-			int counter_for_mid_to_end_exception2 = 0;
-
+			end = temp;
 			for (int move = 1 ; move < number_of_moves + 1; move++) {
 				if (move % 3 == 1) {
 					if (move == 40 + (44 * counter_for_start_to_end_exception)) {
@@ -104,7 +94,7 @@ public class TowerOfHanoi {
 
 					}
 				}
-
+				
 				else if (move % 3 == 2) {
 					if (move == 20 + (24 * counter_for_start_to_mid_exception1)){
 						System.out.println(mid + " ----> " + start);
