@@ -23,7 +23,7 @@ public class TowerOfHanoi {
 					else {
 						if (counter_for_start_to_end % 3 == 0 && counter_for_start_to_end != 0)  {
 							System.out.println(end + " ----> " + start);
-							counter_for_start_to_end++;
+							counter_for_start_to_end =0;
 						}
 						else {
 							System.out.println(start + " ----> " + end);
@@ -95,7 +95,7 @@ public class TowerOfHanoi {
 					else {
 						if (counter_for_start_to_end % 3 == 0 && counter_for_start_to_end != 0)  {
 							System.out.println(end + " ----> " + start);
-							counter_for_start_to_end++;
+							counter_for_start_to_end =0;
 						}
 						else {
 							System.out.println(start + " ----> " + end);
