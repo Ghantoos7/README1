@@ -12,7 +12,7 @@ public class TowerOfHanoi {
 		if (number % 2 == 1){
 			for (int move = 1 ; move < number_of_moves + 1; move++) {
 				if (move % 3 == 1) {
-					if (move == 40 + (44 * counter_for_start_to_end_exception)) {
+					if (move == 40 + (48 * counter_for_start_to_end_exception)) {
 						System.out.println(end + " ----> " + start);
 						counter_for_start_to_end_exception++;
 						counter_for_start_to_end++;
@@ -77,7 +77,7 @@ public class TowerOfHanoi {
 			end = temp;
 			for (int move = 1 ; move < number_of_moves + 1; move++) {
 				if (move % 3 == 1) {
-					if (move == 40 + (44 * counter_for_start_to_end_exception)) {
+					if (move == 40 + (48 * counter_for_start_to_end_exception)) {
 						System.out.println(end + " ----> " + start);
 						counter_for_start_to_end_exception++;
 						counter_for_start_to_end++;
